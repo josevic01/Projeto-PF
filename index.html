@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--
+  Dimension by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Curiosidades sobre as Olimpíadas</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="./assets/css/noscript.css"
+    /></noscript>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="content">
+          <div class="inner">
+            <h1>Olimpíadas</h1>
+            <p>Selecione uma pergunta abaixo referente às Olimpíadas</p>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#pergunta_1"
+                >Descubra quantas medalhas um país conquistou em uma edição
+                olímpica</a
+              >
+            </li>
+            <li>
+              <a href="#pergunta_2"
+                >Saiba quantas mulheres participaram em uma edição dos Jogos
+                Olímpicos</a
+              >
+            </li>
+            <li>
+              <a href="#pergunta_3"
+                >Veja o número total de atletas que competiram em uma edição das
+                Olimpíadas</a
+              >
+            </li>
+            <li>
+              <a href="#pergunta_4"
+                >Confira os anos em que uma cidade sediou os Jogos Olímpicos</a
+              >
+            </li>
+            <li>
+              <a href="#pergunta_5"
+                >Descubra quantas vezes uma cidade específica foi sede dos Jogos
+                Olímpicos</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Pergunta 1 -->
+        <article id="pergunta_1">
+          <h2 class="major">Descubra quantas medalhas</h2>
+          <h2 class="major">um país conquistou em</h2>
+          <h2 class="major">uma edição olímpica</h2>
+          <span class="image main"
+            ><img src="./images/medalhas.jpg" alt=""
+          /></span>
+          <label for="title">Digite uma cidade (Edição)</label>
+          <div id="searchContainer">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Pesquise a cidade aqui..."
+            />
+            <ul id="searchResults"></ul>
+          </div>
+          <label for="title">Digite um País</label>
+          <div id="searchContainer">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Pesquise o País aqui..."
+            />
+            <p style="margin-top: 1px"></p>
+            <button onclick="pesquisar()">Pesquisar</button>
+          </div>
+          <ul id="searchResults"></ul>
+          <p id="resultado1"></p>
+        </article>
+
+        <!-- pergunta_2 -->
+        <article id="pergunta_2">
+          <h2 class="major">Saiba quantas mulheres</h2>
+          <h2 class="major">participaram em uma edição</h2>
+          <h2 class="major">dos Jogos Olímpicos</h2>
+
+          <span class="image main"
+            ><img src="images/mulheres.jpg" alt=""
+          /></span>
+          <label for="title">Digite uma cidade (Edição)</label>
+          <div id="searchContainer">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Pesquise a cidade aqui..."
+            />
+            <ul id="searchResults"></ul>
+            <p style="margin-top: 1px"></p>
+            <button onclick="pesquisar()">Pesquisar</button>
+          </div>
+          <label id="resultado2"></label>
+        </article>
+
+        <!-- pergunta_3 -->
+        <article id="pergunta_3">
+          <h2 class="major">Veja o número total de</h2>
+          <h2 class="major">atletas que competiram em</h2>
+          <h2 class="major">uma edição das Olimpíadas</h2>
+          <span class="image main"><img src="" alt="" /></span>
+          <label for="title">Digite uma cidade (Edição)</label>
+          <div id="searchContainer">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Pesquise a cidade aqui..."
+            />
+            <ul id="searchResults"></ul>
+            <p style="margin-top: 1px"></p>
+            <button onclick="pesquisar()">Pesquisar</button>
+          </div>
+        </article>
+
+        <!-- pergunta_4 -->
+        <article id="pergunta_4">
+          <h2 class="major">Confira os anos em que</h2>
+          <h2 class="major">uma cidade sediou os</h2>
+          <h2 class="major">Jogos Olímpicos</h2>
+          <span class="image main"><img src="" alt="" /></span>
+          <label for="title">Digite uma cidade (Edição)</label>
+          <div id="searchContainer">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Pesquise a cidade aqui..."
+            />
+            <ul id="searchResults"></ul>
+            <p style="margin-top: 1px"></p>
+            <button onclick="pesquisar()">Pesquisar</button>
+          </div>
+        </article>
+
+        <!-- pergunta_5 -->
+        <article id="pergunta_5">
+          <h2 class="major">Descubra quantas vezes</h2>
+          <h2 class="major">uma cidade específica foi</h2>
+          <h2 class="major">sede dos Jogos Olímpicos</h2>
+          <span class="image main"><img src="" alt="" /></span>
+          <label for="title">Digite uma cidade (Edição)</label>
+          <div id="searchContainer">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Pesquise a cidade aqui..."
+            />
+            <ul id="searchResults"></ul>
+            <p style="margin-top: 1px"></p>
+            <button onclick="pesquisar()">Pesquisar</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <p class="copyright">
+          &copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.
+        </p>
+        <p class="icon brands fa-github">
+          <a href="https://github.com/Jvictor-19/Projeto-PF"
+            ><i>Acesse nosso repositório.</i></a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <!-- fundo -->
+    <div id="bg"></div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/browser.min.js"></script>
+    <script src="./assets/js/breakpoints.min.js"></script>
+    <script src="./assets/js/util.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/funcional.js"></script>
+  </body>
+</html>
